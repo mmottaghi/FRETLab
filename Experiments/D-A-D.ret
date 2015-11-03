@@ -1,0 +1,53 @@
+<settings>
+	model		 = "karoon"
+#	model		 = "ode"
+#	model		 = "u_cuvette"
+	dyelibrary	 = "$install/../DB/dyes/"  #  $install is where the simulator is installed
+	dyelist		 = "list of dyes.txt" # a text file containing the list of the dyes which are used in the experiment
+	simlength	 = 8000
+	timeunit	 = "ps" # as, fs, ps, ns, us, m, s
+	step_length	 = 1  # initial time slice (non-zero value)
+	auto_step_tuning = on # on/off  (default: on)
+</settings>
+<ModelSpecific>
+	micro_cuvette_size = 100000  # number of monte_carlo iterationn in each time slice
+	randomization_range = 2000  # 0 means automatic;  it is the denominator for generating random probabilities
+</ModelSpecific>
+<outputs> # excitation_log="$install/../Experiments/outputs/$experiment_trace2.txt">
+	#<file name="$experiment" data="d e f x l">  in 'data' the desired information is specified as follows:
+		# d: Distance 			
+		# e: TransferEfficiency 	
+		# f: FoersterRadius		
+		# s: Output Spectrum
+		# x: ExcitionTransfer	# For each chromophore: how many excitons transferred  to other chromophores
+		# l: LaserAbsorption	# For each chromophore: how many photons absorbed from each laser
+	# $experiment will be replaced by this file's name
+	#<file name="$install/DB/System/outputs/$experiment.rsim"  data="d e s" />
+	#<file name="$install/DB/System/outputs/Xfer.txt"  data="x" />
+</outputs>
+<Light> # default_timeunit="ps">   # times are in picoseconds
+	
+	#<custom wavelength=428  timeunit="fs" name = "Donr" start_time=2 end_time=20000 dark_width=200 bright_width=500 repeat=2 waveform="custom1.ptn"/>
+#	<square wavelength=488  start_time=0 end_time=-1 intensity=5e-8 period=6000 peak_time=5 spike_width=10 name = "sq" timeunit="ps"/>
+	<triangle wavelength=440 start_time=0 end_time=70 intensity=150 period=160 peak_time=10 spike_width=2 name = "tr" timeunit="ps"/>
+</Light>
+<Chromophores>
+	<cp dye = "AF488"  x=0   y=0 z=0 name="D1"/>
+	<cp dye = "AF488"  x=4    y=-2 z=0 name="D2" />
+	<cp dye = "AF594"  x=2.5   y=0 z=0 name="A59" />
+</Chromophores>
+<FRadius acceptors="AF488 AF594" >
+	<donor dye='AF488' R0='-1 6'/>
+</FRadius>
+<PostSimulation>
+	<Watch name="T(max)"	expression="PeakT(@Exc[D1],1)"></Watch>
+	<Watch name="(1/e)max"	expression="1/E*PeakV(@Exc[D1],1)"></Watch>
+	<Watch name="lif(D1)" 	expression="mx=PeakV(@Exc[D1],1); Time(@Exc[D1],1/E*mx, 2,10)-PeakT(@Exc[D1],1)"></Watch>
+	<Watch name="lif(D2)" 	expression="mx=PeakV(@Exc[D2],1); Time(@Exc[D2],1/E*mx, 2,10)-PeakT(@Exc[D2],1)"></Watch>
+	<Watch name="D_lif(D2-D1)" 	expression="mx=PeakV(@Exc[D2],1); 
+							lif_d2=Time(@Exc[D2],1/E*mx, 0,10)-PeakT(@Exc[D2],1); 
+							mx=PeakV(@Exc[D1],1); 
+							lif_d1=Time(@Exc[D1],1/E*mx, 0,10)-PeakT(@Exc[D1],1);
+							lif_d2-lif_d1"></Watch>
+
+</PostSimulation>

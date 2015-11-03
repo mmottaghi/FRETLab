@@ -1,0 +1,22 @@
+<Settings>
+	dyelist	 = "   $install/../DB/dyes/list of dyes.txt" # if empty, the dye library will be reloaded for every simulation
+#	simulator = "c:\windows\explorer.exe -d $simfile"
+
+</Settings>
+
+<Outputs common_path="projects\FRET Simulator\Copy of New\Experiments">
+	<File path="d:\$common\outputs" name="_res_$self.txt.txt" header="D's Lifetime\tA's Lifetime">
+		<Line format="$simid: <$simindex> Delay=@delay (eff=@eff) (TE=@Med_TE) => $M_count mediator(s)" />
+	</File>	
+</Outputs>
+<ActiveVars>
+# <var name="best_wav" value="@MaxExMinDirex($src, $gat, 150, 12000)" />
+</ActiveVars>
+<Simulations id_prefix="wire" template="$selfpath/wire.tret" params="$m1 $m2 $m3 $m4 $m5 $M_count $drX">
+	<Args values="1 1 1 1 1 5  4"/>   # 5 mediators
+	<Args values="1 1 1 1 0 4  2"/>   # 4 mediators
+	<Args values="1 1 1 0 0 3  0"/>   # 3 mediators
+	<Args values="1 1 0 0 0 2 -2"/>   # 2 mediators
+	<Args values="1 0 0 0 0 1 -4"/>   # 1 mediators
+	<Args values="0 0 0 0 0 0 -6"/>   # 0 mediators
+</Simulations>

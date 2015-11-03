@@ -1,0 +1,47 @@
+<settings>
+	model		 = "sadaf"
+#	model		 = "ode"
+#	model		 = "u_cuvette"
+	dyelibrary	 = "$install/../DB/dyes/"  #  $install is where the simulator is installed
+	dyelist		 = "list of dyes.txt" # a text file containing the list of the dyes which are used in the experiment
+	concentration	 = 0.000001  # negative means absolute instance count, positive menas concentration in M (default is 1 uM)
+	simlength	 = 10000
+	timeunit	 = "ps" # as, fs, ps, ns, us, m, s
+	step_length	 = 2  # initial time slice (non-zero value)
+	auto_step_tuning = on # on/off  (default: on)
+</settings>
+<ModelSpecific>
+	micro_cuvette_size = 100000  # number of monte_carlo iterationn in each time slice
+	randomization_range = 4000  # 0 means automatic;  it is the denominator for generating random probabilities
+</ModelSpecific>
+<outputs excitation_log="$install/../Experiments/outputs/$simulation_trace2.txt">
+	#<file name="$experiment" data="d e f x l">  in 'data' the desired information is specified as follows:
+		# d: Distance 			
+		# e: TransferEfficiency 	
+		# f: FoersterRadius		
+		# s: Output Spectrum
+		# x: ExcitionTransfer	# For each chromophore: how many excitons transferred  to other chromophores
+		# l: LaserAbsorption	# For each chromophore: how many photons absorbed from each laser
+	# $experiment will be replaced by this file's name
+	<file name="$install/DB/System/outputs/$simulation.rsim"  data="d e s" />
+	<file name="$install/DB/System/outputs/Xfer.txt"  data="x" />
+</outputs>
+<Light attenuation="1e-4"> # default_timeunit="ps">
+	# times are in picoseconds
+	<triangle wavelength=440 start_time=0 end_time=80 intensity=1 period=100 peak_time=10 spike_width=2 name = "tr" timeunit="ps"/>
+</Light>
+<Chromophores>
+<cp dye =AF488  x=-8   y=0   z=0  enabled=1 name=Src />
+<cp dye =AF594  x=-6   y=0   z=0   name=M1 />
+<cp dye =AF594  x=-4   y=0   z=0   name=M2 />
+<cp dye =AF594  x=-2   y=0   z=0   name=M3 />
+<cp dye =AF594  x=0   y=0   z=0   name=M4 />
+<cp dye =AF647  x=2   y=0   z=0   name=Drn />
+
+</Chromophores>
+<PostSimulation>
+	<Watch name="Mediator TE" expression="TE(@Pair[M1,M2]) "/>
+	<Watch name="drain peak time" expression="_drnp= PeakT(@Exc[Drn], 1, 16) "/>
+	<Watch name="delay" expression="_drnp - PeakT(@Exc[Src])  "/>
+	<Watch name="eff" expression="PeakV(@Exc[Drn], 1, 16)/ PeakV(@Exc[Src]) "/>
+</PostSimulation>

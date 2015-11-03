@@ -1,0 +1,51 @@
+<settings>
+	model		 = "sadaf"
+#	model		 = "ode"
+#	model		 = "u_cuvette"
+	dyelibrary	 = "$install/../DB/dyes/"  #  $install is where the simulator is installed
+	dyelist		 = "list of dyes.txt" # a text file containing the list of the dyes which are used in the experiment
+	simlength	 = 8000
+	timeunit	 = "ps" # as, fs, ps, ns, us, m, s
+	step_length	 = 1  # initial time slice (non-zero value)
+	auto_step_tuning = on # on/off  (default: on)
+</settings>
+<ModelSpecific>
+	micro_cuvette_size = 100000  # number of monte_carlo iterationn in each time slice
+	randomization_range = 4000  # 0 means automatic;  it is the denominator for generating random probabilities
+</ModelSpecific>
+<outputs > # excitation_log="$install/../Experiments/outputs/$experiment_trace2.txt">
+	# <file name="$experiment" data="d e f x l">  in 'data' the desired information is specified as follows:
+		# d: Distance 			
+		# e: TransferEfficiency 	
+		# f: FoersterRadius		
+		# s: Output Spectrum
+		# x: ExcitionTransfer	# For each chromophore: how many excitons transferred  to other chromophores
+		# l: LaserAbsorption	# For each chromophore: how many photons absorbed from each laser
+	# $experiment will be replaced by this file's name
+	#<file name="$install/DB/System/outputs/$experiment.rsim"  data="d e s" />
+	#<file name="$install/DB/System/outputs/Xfer.txt"  data="x" />
+</outputs>
+<Light attenuation=1e-3> # default_timeunit="ps">   # times are in picoseconds
+	
+	# <custom wavelength=428  timeunit="fs" name = "Donr" start_time=2 end_time=20000 dark_width=200 bright_width=500 repeat=2 waveform="custom1.ptn"/>
+	#<triangle wavelength=580 start_time=0 end_time=5000 intensity=70 period=3500 peak_time=100 spike_width=2 name = "L440" timeunit="ps"/>
+	#<triangle wavelength=752 start_time=3400 end_time=5000 intensity=20 period=3500 peak_time=8 spike_width=2 name = "L" timeunit="ps"/>
+	<triangle wavelength=$wav_d start_time=0 end_time=5000 intensity=70 period=3500 peak_time=100 spike_width=2 name = "L440" timeunit="ps"/>
+	<triangle wavelength=$wav_a start_time=3400 end_time=5000 intensity=20 period=3500 peak_time=8 spike_width=2 name = "L" timeunit="ps"/>
+</Light>
+<Chromophores>
+	#<cp dye = ATRho101  x=0   y=0  z=0 name="D"/>
+	#<cp dye = AF750  x=0   y=4.5  z=0 name="A" />
+	<cp dye = $don  x=0   y=0  z=0 name="D"/> 
+	<cp dye = $acp  x=0   y=5.5  z=0 name="A" />
+</Chromophores>
+<PostSimulation> 
+  <Watch name="te(D->A)"  Expression="100*TE(@Pair[D, A])" />
+  <Watch name="edge1"     Expression="PeakT(@Exc[D],1)" />
+  <Watch name="edge2"     Expression="PeakT(@Exc[D],2)" />
+  <Watch name="dec1"      Expression="_mx=PeakV(@Exc[D]); _thr=0.5*_mx; _dec1=Time(@Exc[D],_thr, 0,100)-PeakT(@Exc[D],1)" />
+  <Watch name="dec2"      Expression="_dec2=Time(@Exc[D],_thr, 0,3700)-PeakT(@Exc[D],2)" />  
+  <Watch name="Inc"       Expression="_dec2/_dec1" />
+  <Watch name="XCoF(D)"   Expression="ExtMax(@Dye[D])" />
+  <Watch name="XCoF(A)"   Expression="ExtMax(@Dye[A])" />
+</PostSimulation>

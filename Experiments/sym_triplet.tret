@@ -1,0 +1,26 @@
+<settings>
+	model		 = "karoon"
+#	model		 = "ode"
+#	model		 = "u_cuvette"
+	dyelibrary	 = "$install/../DB/dyes/"  #  $install is where the simulator is installed
+	dyelist		 = "list of dyes.txt" # a text file containing the list of the dyes which are used in the experiment
+	simlength	 = 8000
+	timeunit	 = "ps" # as, fs, ps, ns, us, m, s
+	step_length	 = 1  # initial time slice (non-zero value)
+	auto_step_tuning = on # on/off  (default: on)
+</settings>
+<Light attenuation=1e-2>
+	<triangle wavelength=$wav start_time=0 end_time=700 intensity=150 period=450 peak_time=10 spike_width=2 name = "tr" timeunit="ps"/>
+</Light>
+<Chromophores>
+	<cp dye = $src  x=0   y=0 z=0 name="S"/>
+	<cp dye = $gat  x=5.6 y=0 z=0 name="G" />
+	<cp dye = $drn  x=3.6 y=0 z=0 name="D" />
+</Chromophores>
+<FRadius acceptors="AF488 AF594 AF647" >
+	<donor dye='AF488' R0='-1 6 5.6'/>
+</FRadius>
+<PostSimulation>
+	<Watch name="lif(D)" 	expression="mx=PeakV(@Exc[S],1); Time(@Exc[S],1/E*mx, 2,10)-PeakT(@Exc[S],1)"></Watch>
+	<Watch name="lif(Acc)" 	expression="pt=PeakT(@Exc[G],1); pv=PeakV(@Exc[G],1); Time(@Exc[G],1/E*pv, 0, pt)-PeakT(@Exc[G],1)"></Watch>
+</PostSimulation>

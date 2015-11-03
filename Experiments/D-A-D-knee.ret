@@ -1,0 +1,47 @@
+<settings>
+	model		 = "karoon"  # or "ode" or "u_cuvette"
+	dyelibrary	 = "$install/../DB/dyes/"  #  $install is where the simulator is installed
+	dyelist		 = "list of dyes.txt" # a text file containing the list of the dyes which are used in the experiment
+	simlength	 = 8000
+	timeunit	 = "ps" # as, fs, ps, ns, us, m, s
+	step_length	 = 1  # initial time slice (non-zero value)
+	auto_step_tuning = on # on/off  (default: on)
+</settings>
+<ModelSpecific>
+	micro_cuvette_size = 100000  # number of monte_carlo iterationn in each time slice
+	randomization_range = 4000  # 0 means automatic;  it is the denominator for generating random probabilities
+</ModelSpecific>
+<outputs excitation_log="$install/../Experiments/outputs/$simulation_trace2.txt">
+	#<file name="$experiment" data="d e f x l">  in 'data' the desired information is specified as follows:
+		# d: Distance 			
+		# e: TransferEfficiency 	
+		# f: FoersterRadius		
+		# s: Output Spectrum
+		# x: ExcitionTransfer	# For each chromophore: how many excitons transferred  to other chromophores
+		# l: LaserAbsorption	# For each chromophore: how many photons absorbed from each laser
+	# $experiment will be replaced by this file's name
+	<file name="$install/DB/System/outputs/$simulation.rsim"  data="d e s" />
+	<file name="$install/DB/System/outputs/Xfer.txt"  data="x" />
+</outputs>
+<Light> # default_timeunit="ps">   # times are in picoseconds
+	
+	#<custom wavelength=428  timeunit="fs" name = "Donr" start_time=2 end_time=20000 dark_width=200 bright_width=500 repeat=2 waveform="custom1.ptn"/>
+#	<square wavelength=488  start_time=0 end_time=-1 intensity=5e-8 period=6000 peak_time=5 spike_width=10 name = "sq" timeunit="ps"/>
+	<triangle wavelength=440 start_time=0 end_time=60 intensity=170 period=70 peak_time=10 spike_width=2 name = "tr" timeunit="ps"/>
+</Light>
+<FRadius acceptors="AF405 AF488 AF647" >
+	<donor dye='AF405' R0='-1 5.7 2.8'/>
+	<donor dye='AF488' R0='-1 -1 5.6'/>
+</FRadius>
+
+<Chromophores>
+	<cp dye = "AF405"  x=0   y=0  z=0 name="B"/>
+	<cp dye = "AF405"  x=3   y=-0.5  z=0 name="C" />
+	#<cp dye = "AF405"  x=4  y=2 z=0 name="P" />
+	<cp dye = "AF594"  x=-0.7   y=1.5 z=0 name="A" />
+</Chromophores>
+<PostSimulation>
+  <Watch name="te(B->A)"  Expression="TE(@Pair[B, A])" />
+  <Watch name="te(C->A)"  Expression="TE(@Pair[C, A])" />
+  <Watch name="te(C->B)"  Expression="TE(@Pair[C, B])" />
+</PostSimulation>

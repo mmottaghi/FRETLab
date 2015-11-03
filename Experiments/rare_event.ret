@@ -1,0 +1,42 @@
+<settings>
+	model		 = "karoon"
+#	model		 = "ode"
+#	model		 = "u_cuvette"
+	dyelibrary	 = "$install/../DB/dyes/"  #  $install is where the simulator is installed
+	dyelist		 = "list of dyes.txt" # a text file containing the list of the dyes which are used in the experiment
+	simlength	 = 8000
+	concentration    = 0.0000001
+	timeunit	 = "ps" # as, fs, ps, ns, us, m, s
+	step_length	 = 1  # initial time slice (non-zero value)
+	auto_step_tuning = on # on/off  (default: on)
+</settings>
+<ModelSpecific>
+	micro_cuvette_size = 100000  # number of monte_carlo iterationn in each time slice
+	randomization_range = 2000  # 0 means automatic;  it is the denominator for generating random probabilities
+</ModelSpecific>
+<Light attenuation=.01> # default_timeunit="ps">   # times are in picoseconds
+	
+	#<custom wavelength=428  timeunit="fs" name = "Donr" start_time=2 end_time=20000 dark_width=200 bright_width=500 repeat=2 waveform="custom1.ptn"/>
+	<triangle wavelength=430 start_time=0 end_time=70 intensity=150 period=65 peak_time=10 spike_width=2 name = "tr" timeunit="ps"/>
+</Light>
+<Chromophores>
+	<cp dye = "AF488"  x=4.7  y=-5.3 z=0 name="D6" />  #  x=4.7622
+	<cp dye = "AF488"  x=10.7  y=-5.3 z=0 name="D5" />  #  x=4.7622
+	<cp dye = "AF488"  x=16.7  y=-5.3 z=0 name="D4" />  #  x=4.7622
+	<cp dye = "AF488"  x=-13.3  y=-5.3 z=0 name="D3" />  #  x=4.7622
+	<cp dye = "AF488"  x=-7.3  y=-5.3 z=0 name="D2" />  #  x=4.7622
+	<cp dye = "AF488"  x=-1.3  y=-5.3 z=0 name="D1" />  #  x=4.7622
+	<cp dye = "AF546"  x=-1    y=3.7  z=0 name="M" />  # x=4.7622
+	<cp dye = "AF647"  x=1.5   y=7.7  z=0 name="A"/>
+	<cp dye = "AF488"  x=-2.3  y=8.1  z=0 name="C" />  #  x=4.7622
+</Chromophores>
+<FRadius acceptors="AF488 AF594 AF647" >
+	<donor dye='AF488' R0='-1 6 5.6'/>
+</FRadius>
+<PostSimulation>
+	<Watch name="lif(D1)" 	   expression="mx=PeakV(@Exc[D1],1); _tau = Time(@Exc[D1],1/E*mx, 2,10)-PeakT(@Exc[D1],1)"></Watch>
+	<Watch name="te(D1->M)"         expression="TE(@Pair[D1, M])"></Watch>
+	<Watch name="te(D2->M)"         expression="TE(@Pair[D2, M])"></Watch>
+	<Watch name="te(M->Ac)"   expression="TE(@Pair[M, Ac])"></Watch>
+	<Watch name="te(D2->Ac)"   expression="TE(@Pair[D2, Ac])"></Watch>
+</PostSimulation>

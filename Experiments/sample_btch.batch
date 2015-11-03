@@ -1,0 +1,15 @@
+
+
+<Batch>
+  <Sim file="D:\projects\FRET Simulator\Copy of New\DB\System\MySystem.py" />
+  <Sim file="  D:\projects\FRET Simulator\Copy of New\DB\System\MySystem4.py  "/>
+#D:\projects\FRET Simulator\Copy of New\DB\System\SRQ.py
+
+
+  <Sim file="     D:\projects\FRET Simulator\Copy of New\DB\System\Wire_W1_D1_L10.py  "/>
+
+  <Sim file=""/>
+  <Sim file=""/>
+  <Sim file="  D:\projects\FRET Simulator\Copy of New\DB\System\MySystem7.py"/>
+  <Sim file="  D:\projects\FRET Simulator\Copy of New\DB\System\MySystem8.py"/>
+</Batch>

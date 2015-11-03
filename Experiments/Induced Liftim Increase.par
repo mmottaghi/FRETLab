@@ -1,0 +1,84 @@
+<Settings>
+	dyelist	 = "   $install/../DB/dyes/list of dyes.txt" # if empty, the dye library will be reloaded for every simulation
+	sequential=true
+#	simulator = "c:\windows\explorer.exe -d $simfile"
+
+</Settings>
+
+<Outputs common_path="">
+	<File path="$selfpath/../outputs" name="$self(5).txt" header="Sim Results">
+		<Line format="$simid: <$simindex> [$don, $acp, ($wav_d;$wav_a)], TE=@te(D->A), inc=@Inc, @XCoF(D), @XCoF(A) " />
+	</File>	
+</Outputs>
+<ActiveVars>
+  <var name="D_best_wv" value="@MaxExMinDirex($don, $acp, 150, 12000)" />
+  <var name="A_best_wv" value="@MaxExMinDirex($acp, $don, 150, 12000)" />
+</ActiveVars>
+
+<Simulations id_prefix="pair" template="$selfpath/$self.tret" params="$don $acp $wav_d $wav_a">
+
+	<Args values='AT488 AT565 $D_best_wv $A_best_wv'/>
+	<Args values='AT488 AT590 $D_best_wv $A_best_wv'/>
+	<Args values='AT488 AT633 $D_best_wv $A_best_wv'/>
+	<Args values='AT488 AT647N $D_best_wv $A_best_wv'/>
+	<Args values='AT488 ATRho101 $D_best_wv $A_best_wv' id='salam'/>
+	<Args values='AT488 AF594 $D_best_wv $A_best_wv'/>
+	<Args values='AT488 AF647 $D_best_wv $A_best_wv'/>
+	<Args values='AT488 AF660 $D_best_wv $A_best_wv'/>
+	<Args values='AT488 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AT488 RR $D_best_wv $A_best_wv'/>
+	<Args values='AT488 TR $D_best_wv $A_best_wv'/>
+	<Args values='AT532 AT633 $D_best_wv $A_best_wv'/>
+	<Args values='AT532 AT647N $D_best_wv $A_best_wv'/>
+	<Args values='AT532 AF647 $D_best_wv $A_best_wv'/>
+	<Args values='AT532 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AT550 AT633 $D_best_wv $A_best_wv'/>
+	<Args values='AT550 AT647N $D_best_wv $A_best_wv'/>
+	<Args values='AT550 AF647 $D_best_wv $A_best_wv'/>
+	<Args values='AT550 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AT565 AT647N $D_best_wv $A_best_wv'/>
+	<Args values='AT565 AF647 $D_best_wv $A_best_wv'/>
+	<Args values='AT565 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AT590 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AT633 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='ATRho101 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AT550 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AT565 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AT590 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AT633 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AT647N $D_best_wv $A_best_wv'/>
+	<Args values='AF488 ATRho101 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AF546 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AF594 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AF647 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AF660 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AF488 RR $D_best_wv $A_best_wv'/>
+	<Args values='AF488 TR $D_best_wv $A_best_wv'/>
+	<Args values='AF532g AT633 $D_best_wv $A_best_wv'/>
+	<Args values='AF532g AT647N $D_best_wv $A_best_wv'/>
+	<Args values='AF532g AF647 $D_best_wv $A_best_wv'/>
+	<Args values='AF532g AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AF546 AT633 $D_best_wv $A_best_wv'/>
+	<Args values='AF546 AT647N $D_best_wv $A_best_wv'/>
+	<Args values='AF546 AF647 $D_best_wv $A_best_wv'/>
+	<Args values='AF546 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='AF594 AF750 $D_best_wv $A_best_wv'/>
+	<Args values='RG AT550 $D_best_wv $A_best_wv'/>
+	<Args values='RG AT565 $D_best_wv $A_best_wv'/>
+	<Args values='RG AT590 $D_best_wv $A_best_wv'/>
+	<Args values='RG AT633 $D_best_wv $A_best_wv'/>
+	<Args values='RG AT647N $D_best_wv $A_best_wv'/>
+	<Args values='RG ATRho101 $D_best_wv $A_best_wv'/>
+	<Args values='RG AF594 $D_best_wv $A_best_wv'/>
+	<Args values='RG AF647 $D_best_wv $A_best_wv'/>
+	<Args values='RG AF660 $D_best_wv $A_best_wv'/>
+	<Args values='RG AF750 $D_best_wv $A_best_wv'/>
+	<Args values='RG RR $D_best_wv $A_best_wv'/>
+	<Args values='RG TR $D_best_wv $A_best_wv'/>
+	<Args values='RR AT647N $D_best_wv $A_best_wv'/>
+	<Args values='RR AF647 $D_best_wv $A_best_wv'/>
+	<Args values='RR AF750 $D_best_wv $A_best_wv'/>
+	<Args values='TR AF750 $D_best_wv $A_best_wv'/>
+
+</Simulations>

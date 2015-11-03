@@ -1,0 +1,29 @@
+<Settings>
+	dyelist	 = "   $install/../DB/dyes/list of dyes.txt" # if empty, the dye library will be reloaded for every simulation
+</Settings>
+
+<Outputs common_path="projects\FRET Simulator\Copy of New\Experiments">
+	<File path="d:\$common\outputs" name="_res_$self.txt" header="D's Lifetime\tA's Lifetime">
+		<Line format="$simid: <$simindex> Delay=@delay (eff=@eff) TE=@med-med TE " />
+	</File>	
+</Outputs>
+<ActiveVars>
+# <var name="best_wav" value="@MaxExMinDirex($src, $gat, 150, 12000)" />
+</ActiveVars>
+<Simulations id_prefix="wire" template="$selfpath/$self.tret" params="$c1X $c2X $c4X $c5X">
+	<Args values='-4.4 -2.2 2.2 4.4 '  />
+	<Args values='-5 -2.5 2.5 5 '  />
+	<Args values='-5.6 -2.8 2.8 5.6 ' id="hello" />
+	<Args values='-6.2 -3.1 3.1 6.2 '  />
+	<Args values='-6.8 -3.4 3.4 6.8 '  />
+	<Args values='-7.4 -3.7 3.7 7.4 '  />
+	<Args values='-8 -4 4 8 '  />
+	<Args values='-8.6 -4.3 4.3 8.6 '  />
+	<Args values='-9.2 -4.6 4.6 9.2 '  />
+	<Args values='-9.8 -4.9 4.9 9.8 '  />
+	<Args values='-10.4 -5.2 5.2 10.4 '  />
+	<Args values='-11 -5.5 5.5 11 '  />
+	<Args values='-11.6 -5.8 5.8 11.6 '  />
+	<Args values='-12.2 -6.1 6.1 12.2 '  />
+</Simulations>
+

@@ -1,0 +1,3 @@
+* To run the program go to the "Bin" folder, and double-click on the "RETCAD.exe" file.
+
+* Sample simulation files are in the "Experiments" folder.

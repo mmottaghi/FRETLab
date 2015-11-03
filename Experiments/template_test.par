@@ -1,0 +1,59 @@
+<Settings>
+	dyelist	 = "   $install/../DB/dyes/list of dyes.txt" # if empty, the dye library will be reloaded for every simulation
+
+</Settings>
+
+<Outputs common_path="projects\FRET Simulator\Copy of New\Experiments">
+	<File path="d:\$common\outputs" name="_res_$self.txt" header="D's Lifetime\tA's Lifetime">
+		<Line format="$simid: <@@$simindex> lif(D)=@lif(D)  => {$src, $gat, $drn, $wav}" />
+	</File>	
+</Outputs>
+<ActiveVars>
+# <var name="best_wav" value="@MaxExMinDirex($src, $gat, 150, 12000)" />
+	 <var name="best_wav" value="@MaxExMinDirexRel($src, $gat, 150, 0.3)" />
+#	 <var name="best_wav" value="@MaxExMinDirexScl($src, $gat, 150, 0.2)" />
+</ActiveVars>
+<Simulations id_prefix="Arj" template="$selfpath/sym_triplet.tret" params="$src $gat  $drn  $wav ">
+	<Args values="AT390 AT495 AT532 $best_wav"/>
+	<Args values="AT390 AT488 AT550 $best_wav"/>
+	<Args values="AT390 ATRho6G ATRho3B $best_wav"/>
+	<Args values="AT390 AT488 ATRho6G $best_wav"/>
+	<Args values="AT390 AT495 ATRho6G $best_wav"/>
+	<Args values="AT390 AT514 ATThio12 $best_wav"/>
+	<Args values="AT390 AT532 ATThio12 $best_wav"/>
+	<Args values="AT390 ATRho6G ATThio12 $best_wav"/>
+	<Args values="AT425 AT488 AT532 $best_wav"/>
+	<Args values="AT390 AT488 AT532 @MaxExMinDirexRel($src,$gat,150,0.3)" id="hello"/>
+	<Args values="AT425 AT520 AT550 $best_wav"/>
+	<Args values="AT425 AT488 AT565 $best_wav" id="seems"/>
+	<Args values="AT425 AT514 AT565 $best_wav"/>
+	<Args values="AT425 AT520 ATRho3B $best_wav"/>
+	<Args values="AT425 AT532 ATRho3B $best_wav"/>
+	<Args values="AT425 ATRho6G ATRho3B $best_wav"/>
+	<Args values="AT425 AT488 ATRho6G $best_wav"/>
+	<Args values="AT425 AT514 ATThio12 $best_wav"/>
+	<Args values="AT425 AT532 ATThio12 $best_wav"/>
+	<Args values="AT425 ATRho6G ATThio12 $best_wav"/>
+	<Args values="AT465 AT610 AT647 $best_wav"/>
+	<Args values="AT465 AT610 AT647N $best_wav"/>
+	<Args values="AT465 AT610 AT665 $best_wav"/>
+	<Args values="AT465 AT620 AT665 $best_wav"/>
+	<Args values="AT465 AT633 AT665 $best_wav"/>
+	<Args values="AT488 ATRho11 AT594 $best_wav"/>
+	<Args values="AT488 ATRho12 AT594 $best_wav"/>
+	<Args values="AT488 ATRho11 ATRho13 $best_wav"/>
+	<Args values="AT488 ATRho101 ATRho14 $best_wav"/>
+	<Args values="AT488 ATRho11 ATRho14 $best_wav"/>
+	<Args values="AT488 ATRho12 ATRho14 $best_wav"/>
+	<Args values="AT488 ATThio12 ATRho14 $best_wav"/>
+	<Args values="AT495 AT565 AT590 $best_wav"/>
+	<Args values="AT495 AT565 AT594 $best_wav"/>
+	<Args values="AT495 ATRho11 AT594 $best_wav"/>
+	<Args values="AT495 ATRho12 AT594 $best_wav"/>
+	<Args values="AT495 ATRho3B AT594 $best_wav"/>
+	<Args values="AT495 AT565 AT610 $best_wav"/>
+	<Args values="AT495 ATRho101 AT610 $best_wav"/>
+	<Args values="AT495 ATRho11 AT620 $best_wav"/>
+	<Args values="AT495 ATRho12 AT620 $best_wav"/>
+	<Args values="AT495 ATRho3B AT620 $best_wav"/>
+</Simulations>

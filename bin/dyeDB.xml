@@ -1,0 +1,308 @@
+<dye structure='' group='' id='QD605SA' name='Qdot® 605 streptavidin/pH 7.2' shortname='Qdot 605'></dye>
+<dye structure='' group='' id='QD705SA' name='Qdot® 705 streptavidin/pH 7.2' shortname='Qdot 705'></dye>
+<dye structure='33712' group='R' id='649' name='RH 795/lipid' shortname='RH 795'></dye>
+<dye structure='' group='' id='10045' name='CellMask Orange plasma membrane stain' shortname='stCM O p'></dye>
+<dye structure='' group='' id='10046' name='CellMask Deep Red plasma membrane stain' shortname='stCM DR p'></dye>
+<dye structure='' group='S' id='12000' name='SYPRO® Ruby protein gel stain' shortname='SYPRO Ru'></dye>
+<dye structure='' group='' id='21855' name='Pro-Q® Emerald 300 reagent' shortname='Pro-Q Em300'></dye>
+<dye structure='' group='' id='33300' name='Pro-Q® Diamond phosphoprotein gel stain' shortname='st.Pro-Q Di'></dye>
+<dye structure='' group='' id='34350' name='HCS LipidTOX Green phospholipidosis detection reagent' shortname='TOX G'></dye>
+<dye structure='' group='' id='34351' name='HCS LipidTOX Red phospholipidosis detection reagent' shortname='TOX R'></dye>
+<dye structure='' group='' id='36207' name='Premo Cameleon Calcium Sensor' shortname='PCCS'></dye>
+<dye structure='' group='' id='36905g' name='FocalCheck DoubleGreen Fluorescent Microspheres (General Stain)' shortname='st.FC G'></dye>
+<dye structure='' group='' id='36905' name='FocalCheck DoubleGreen Fluorescent Microspheres (Ring Stain)' shortname='st.FC G r'></dye>
+<dye structure='' group='' id='36906g' name='FocalCheck DoubleOrange Fluorescent Microspheres (General Stain)' shortname='st.FC O'></dye>
+<dye structure='' group='' id='36906' name='FocalCheck DoubleOrange Fluorescent Microspheres (Ring Stain)' shortname='st.FC O r'></dye>
+<dye structure='3027' group='D' id='10000moh' name='BODIPY® 630/650-X/MeOH' shortname='BODIPY 630'></dye>
+<dye structure='3028' group='D' id='10001moh' name='BODIPY® 650/665-X/MeOH' shortname='BODIPY 650'></dye>
+<dye structure='' group='' id='10016tl' name='FluxOR thallium indicator/pH 7.2' shortname='FlOR'></dye>
+<dye structure='100002444' group='C' id='10094gsh' name='CellTracker Violet BMQC+GSH' shortname='CT V BMQC'></dye>
+<dye structure='' group='' id='10095gsh' name='[ThiolTracker] Violet+GSH' shortname='TC V'></dye>
+<dye structure='' group='' id='10119p72' name='LIVE/DEAD® Fixable Near-IR Dead Cell Stain' shortname='stLD NIR'></dye>
+<dye structure='' group='' id='10120p72' name='LIVE/DEAD® Fixable Far Red Dead Cell Stain' shortname='stLD FR'></dye>
+<dye structure='32309' group='Q' id='10193moh' name='QSY® 7/MeOH' shortname='QSY 7'></dye>
+<dye structure='32309' group='Q' id='10193oli' name='QSY® 7 dye labeled oligonucleotide/pH 7.5' shortname='QSY 7 o'></dye>
+<dye structure='' group='' id='10273dna' name='Vybrant® DyeCycle Ruby stain/DNA' shortname='st.Vybrant DC Ru'></dye>
+<dye structure='' group='' id='10274dna' name='SYTOX® AADvanced dead cell stain/DNA' shortname='st.SYTOX'></dye>
+<dye structure='' group='' id='10294dna' name='HCS [NuclearMask] Deep Red stain/DNA' shortname='stNM DR'></dye>
+<dye structure='' group='' id='10326dna' name='HCS [NuclearMask] Red stain' shortname='stNM R'></dye>
+<dye structure='33312' group='F' id='10347dna' name='[FxCycle] Violet stain' shortname='stFxC V'></dye>
+<dye structure='' group='' id='10348dna' name='[FxCycle] Far Red stain' shortname='stFxC FR'></dye>
+<dye structure='3060' group='D' id='10460moh' name='Dapoxyl® (2-aminoethyl)sulfonamide/MeOH' shortname='Dapoxyl 2SA'></dye>
+<dye structure='' group='' id='10991ph8' name='Marina Blue® goat anti mouse IgG antibody/pH 8.0' shortname='MB g'></dye>
+<dye structure='' group='' id='10993ph8' name='Pacific Blue goat anti mouse IgG antibody/pH 8.0' shortname='PB g'></dye>
+<dye structure='' group='' id='10995ph8' name='Cascade Yellow goat anti mouse IgG antibody/pH 8.0' shortname='CY g'></dye>
+<dye structure='' group='' id='11045ph8' name='Alexa Fluor® 350 goat anti mouse IgG antibody/pH 8.0' shortname='AF350g'></dye>
+<dye structure='7100405' group='' id='31553p72' name='Alexa Fluor® 405 goat anti mouse IgG antibody/pH 7.2' shortname='AF405g'></dye>
+<dye structure='7100430' group='' id='11063p72' name='Alexa Fluor® 430 goat anti mouse IgG antibody/pH 7.2' shortname='AF430g'></dye>
+<dye structure='' group='' id='11001ph8' name='Alexa Fluor® 488 goat anti mouse IgG antibody/pH 8.0' shortname='AF488g'></dye>
+<dye structure='7100514' group='' id='31555p8' name='Alexa Fluor® 514 goat anti mouse IgG antibody/pH 8.0' shortname='AF514g'></dye>
+<dye structure='7100532' group='' id='11002p72' name='Alexa Fluor® 532 goat anti mouse IgG antibody/pH 7.2' shortname='AF532g'></dye>
+<dye structure='7100546' group='' id='11003p72' name='Alexa Fluor® 546 goat anti mouse IgG antibody/pH 7.2' shortname='AF546g'></dye>
+<dye structure='' group='' id='21422p72' name='Alexa Fluor® 555 goat anti mouse IgG antibody/pH 7.2' shortname='AF555g'></dye>
+<dye structure='' group='' id='11004p72' name='Alexa Fluor® 568 goat anti mouse IgG antibody/pH 7.2' shortname='AF568g'></dye>
+<dye structure='' group='' id='11005p72' name='Alexa Fluor® 594 goat anti mouse IgG antibody/pH 7.2' shortname='AF594g'></dye>
+<dye structure='7100610' group='' id='31550p72' name='Alexa Fluor® 610 goat anti mouse IgG antibody/pH 7.2' shortname='AF610g'></dye>
+<dye structure='' group='' id='21050p72' name='Alexa Fluor® 633 goat anti mouse IgG antibody/pH 7.2' shortname='AF633g'></dye>
+<dye structure='' group='' id='31574p72' name='Alexa Fluor® 635 goat anti mouse IgG antibody/pH 7.2' shortname='AF635g'></dye>
+<dye structure='' group='' id='21235p72' name='Alexa Fluor® 647 goat anti mouse IgG antibody/pH 7.2' shortname='AF647g'></dye>
+<dye structure='' group='' id='21054p72' name='Alexa Fluor® 660 goat anti mouse IgG antibody/pH 7.2' shortname='AF660g'></dye>
+<dye structure='' group='' id='21057p72' name='Alexa Fluor® 680 goat anti mouse IgG antibody/pH 7.2' shortname='AF680g'></dye>
+<dye structure='' group='' id='21036p72' name='Alexa Fluor® 700 goat anti mouse IgG antibody/pH 7.2' shortname='AF700g'></dye>
+<dye structure='' group='' id='21037p72' name='Alexa Fluor® 750 goat anti mouse IgG antibody/pH 7.2' shortname='AF750g'></dye>
+<dye structure='' group='' id='AF790GaM' name='Alexa Fluor® 790 goat anti mouse IgG antibody/pH 7.2' shortname='AF790g'></dye>
+<dye structure='15245' group='A' id='A350Hh2o' name='Alexa Fluor® 350 hydrazide/H 2 O' shortname='AF350h'></dye>
+<dye structure='5695' group='A' id='10436h2o' name='Alexa Fluor® 488 hydrazide/H 2 O' shortname='AF488h'></dye>
+<dye structure='17246' group='A' id='A555Hh2o' name='Alexa Fluor® 555 hydrazide/H 2 O' shortname='AF555h'></dye>
+<dye structure='5696' group='A' id='10437h2o' name='Alexa Fluor® 568 hydrazide/H 2 O' shortname='AF568h'></dye>
+<dye structure='7100647' group='A' id='A647Hh2o' name='Alexa Fluor® 647 hydrazide/H 2 O' shortname='AF647h'></dye>
+<dye structure='36175' group='A' id='30678h2o' name='Alexa Fluor® 594 cadaverine/H 2 O' shortname='AF594c'></dye>
+<dye structure='' group='' id='20982p72' name='Alexa Fluor® 610 R-phycoerythrin streptavidin/pH 7.2' shortname='AF610Rs'></dye>
+<dye structure='' group='' id='20992p72' name='Alexa Fluor® 647 R-phycoerythrin streptavidin/pH 7.2' shortname='AF647Rs'></dye>
+<dye structure='' group='' id='20985p72' name='Alexa Fluor® 680 R-phycoerythrin streptavidin/pH 7.2' shortname='AF680Rs'></dye>
+<dye structure='' group='' id='21002p72' name='Alexa Fluor® 680 allophycocyanin streptavidin/pH 7.2' shortname='AF680as'></dye>
+<dye structure='' group='' id='21680h2o' name='Alexa Fluor® 488 dye labeled oligonucleotide/H 2 O' shortname='AF488'></dye>
+<dye structure='' group='' id='21681h2o' name='Alexa Fluor® 546 dye labeled oligonucleotide/H 2 O' shortname='AF546'></dye>
+<dye structure='' group='' id='21687h2o' name='Alexa Fluor® 555 dye labeled oligonucleotide/H 2 O' shortname='AF555'></dye>
+<dye structure='' group='' id='21682h2o' name='Alexa Fluor® 594 dye labeled oligonucleotide/H 2 O' shortname='AF594'></dye>
+<dye structure='' group='' id='21686h2o' name='Alexa Fluor® 647 dye labeled oligonucleotide/H 2 O' shortname='AF647'></dye>
+<dye structure='' group='' id='11341dna' name='SYTO® 59/DNA' shortname='SYTO 59'></dye>
+<dye structure='' group='' id='11342dna' name='SYTO® 60/DNA' shortname='SYTO 60'></dye>
+<dye structure='' group='' id='11343dna' name='SYTO® 61/DNA' shortname='SYTO 61'></dye>
+<dye structure='' group='' id='11344dna' name='SYTO® 62/DNA' shortname='SYTO 62'></dye>
+<dye structure='' group='' id='11348dna' name='SYTOX® Blue/DNA' shortname='SYTOX B'></dye>
+<dye structure='' group='' id='11356dna' name='SYTO® 45/DNA' shortname='SYTO 45'></dye>
+<dye structure='' group='' id='11363dna' name='SYTO® 82/DNA' shortname='SYTO 82'></dye>
+<dye structure='' group='' id='11368dna' name='SYTOX® Orange/DNA' shortname='SYTOX O'></dye>
+<dye structure='32363' group='J' id='11372dna' name='JOJO -1/DNA' shortname='JOJO 1'></dye>
+<dye structure='32364' group='L' id='11376dna' name='LOLO -1/DNA' shortname='LOLO 1'></dye>
+<dye structure='108' group='D' id='113moh' name='Dansyl cadaverine/MeOH' shortname='DC'></dye>
+<dye structure='823' group='N' id='1142gto' name='Nile red/triglyceride' shortname='NR t'></dye>
+<dye structure='823' group='N' id='1142lip' name='Nile red/phospholipid' shortname='NR p'></dye>
+<dye structure='' group='' id='11494dna' name='SYBR® Gold nucleic acid gel stain/DNA' shortname='st.SYBR Gold'></dye>
+<dye structure='830' group='B' id='1151ph' name='BCECF/pH 9.0 and 5.5' shortname='BCECF'></dye>
+<dye structure='845' group='E' id='1169dna' name='Ethidium homodimer-1/DNA' shortname='EH 1'></dye>
+<dye structure='863' group='F' id='1200ca' name='Fura-2' shortname='Fura-2'></dye>
+<dye structure='865' group='I' id='1202ca' name='Indo-1' shortname='Indo-1'></dye>
+<dye structure='3662' group='E' id='12353lip' name='ER-Tracker Blue-White DPX/lipid' shortname='ERT BW DPX'></dye>
+<dye structure='883' group='F' id='1240ca' name='Fluo-3/Ca 2+' shortname='Fluo-3'></dye>
+<dye structure='' group='' id='12491ph5' name='LysoTracker® Yellow HCK-123' shortname='LT Y'></dye>
+<dye structure='896' group='S' id='1262na' name='SBFI' shortname='SBFI'></dye>
+<dye structure='3192' group='O' id='12650lip' name='Oregon Green® 488 DHPE' shortname='OG 488 D'></dye>
+<dye structure='900' group='C' id='1270A' name='Carboxy SNARF®-1/pH 9.0 and 6.0/488 nm excitation' shortname='CSNARF 488'></dye>
+<dye structure='900' group='C' id='1270B' name='Carboxy SNARF®-1/pH 9.0 and 6.0/514 nm excitation' shortname='CSNARF 514'></dye>
+<dye structure='3198' group='D' id='12731lip' name='DiR/lipid' shortname='DiR'></dye>
+<dye structure='915' group='F' id='1300naoh' name='Fluorescein/pH 13.0' shortname='F.13'></dye>
+<dye structure='915' group='F' id='1300ph9' name='Fluorescein/pH 9.0' shortname='F.9'></dye>
+<dye structure='916' group='A' id='1301dna' name='Acridine orange/DNA' shortname='AO'></dye>
+<dye structure='919' group='P-MP' id='1304dna' name='Propidium iodide/DNA' shortname='PI'></dye>
+<dye structure='920' group='E' id='1305dna' name='Ethidium bromide/DNA' shortname='EB'></dye>
+<dye structure='921' group='D' id='1306dna' name='DAPI/DNA' shortname='DAPI'></dye>
+<dye structure='925' group='A' id='1310dna' name='7-aminoactinomycin D/DNA' shortname='7AAM D'></dye>
+<dye structure='965' group='C' id='1359ph9' name='5-FAM/pH 9.0' shortname='5FAM'></dye>
+<dye structure='982' group='M' id='1378gsh' name='mBBr+GSH/pH 8.0' shortname='mBBR'></dye>
+<dye structure='996' group='T-MP' id='1395lip' name='Texas Red® DHPE' shortname='TR DHPE'></dye>
+<dye structure='997' group='H' id='1398dna' name='Hoechst 33258/DNA' shortname='Hoechst '></dye>
+<dye structure='5705' group='F' id='14200ca' name='Fluo-4/Ca 2+' shortname='Fluo-4'></dye>
+<dye structure='5712' group='X' id='14209ca' name='X-rhod-1/Ca 2+' shortname='X-rhod-1'></dye>
+<dye structure='15801' group='F' id='14219c' name='Fura Red' shortname='FR'></dye>
+<dye structure='32352' group='R' id='14220ca' name='Rhod-2/Ca 2+' shortname='R2'></dye>
+<dye structure='137' group='F' id='143iggp8' name='FITC goat anti mouse IgG antibody/pH 8.0' shortname='FITC'></dye>
+<dye structure='' group='' id='1817ph7' name='Tetramethylrhodamine dextran/pH 7.0' shortname='TMR'></dye>
+<dye structure='' group='' id='1820ph8' name='Fluorescein dextran/pH 8.0' shortname='F'></dye>
+<dye structure='' group='' id='1828h2o' name='Texas Red® dextran/H 2 O' shortname='TR'></dye>
+<dye structure='182' group='H' id='189ph9' name='7-hydroxy-4-methylcoumarin/pH 9.0' shortname='7H-4MC'></dye>
+<dye structure='184' group='A' id='191ph7' name='7-amino-4-methylcoumarin/pH 7.0' shortname='7A-4MC'></dye>
+<dye structure='34809' group='Q' id='20131moh' name='QSY® 9/MeOH' shortname='QSY 9'></dye>
+<dye structure='34810' group='Q' id='20132moh' name='QSY® 21/MeOH' shortname='QSY 21'></dye>
+<dye structure='34930' group='Q' id='20133moh' name='QSY® 35/MeOH' shortname='QSY 35'></dye>
+<dye structure='' group='' id='21480rna' name='NeuroTrace® 500/525 green fluorescent Nissl stain/RNA' shortname='stNT G'></dye>
+<dye structure='' group='' id='21678h2o' name='Pacific Blue dye labeled oligonucleotide/H 2 O' shortname='PB'></dye>
+<dye structure='1340' group='D' id='2184moh' name='BODIPY® FL/MeOH' shortname='BODIPY FL'></dye>
+<dye structure='1347' group='C' id='2213ph7' name='6-carboxyrhodamine 6G/pH 7.0' shortname='6CR 6G'></dye>
+<dye structure='35201' group='M' id='22426moh' name='MitoTracker® Deep Red FM/MeOH' shortname='MT DR FM'></dye>
+<dye structure='1356' group='D' id='2245moh' name='Dabcyl/MeOH' shortname='Dabcyl'></dye>
+<dye structure='' group='' id='23101ph8' name='LIVE/DEAD® Fixable Green Dead Cell Stain' shortname='stLD G'></dye>
+<dye structure='' group='' id='23102p72' name='LIVE/DEAD® Fixable Red Dead Cell Stain' shortname='stLD R'></dye>
+<dye structure='' group='' id='23105ph8' name='LIVE/DEAD® Fixable Blue Dead Cell Stain' shortname='stLD B'></dye>
+<dye structure='34459' group='D' id='23841no' name='DAF-FM/NO' shortname='DAF-FM'></dye>
+<dye structure='' group='' id='2752ph72' name='BODIPY® FL goat anti mouse IgG antibody/pH 7.2' shortname='BODIPY FL g'></dye>
+<dye structure='267' group='D' id='275lip' name='DiO/lipid' shortname='DiO'></dye>
+<dye structure='' group='' id='2761old' name='Fluorescein goat anti mouse IgG antibody/pH 8.0' shortname='F g'></dye>
+<dye structure='' group='' id='2762ph8' name='Tetramethylrhodamine goat anti mouse IgG antibody/pH 8.0' shortname='TMR g'></dye>
+<dye structure='274' group='D' id='282lip' name='DiI/lipid' shortname='Dil'></dye>
+<dye structure='1551' group='C' id='3010ca' name='Calcium Green -1/Ca 2+' shortname='CG'></dye>
+<dye structure='1553' group='C' id='3013ca' name='Calcium Orange /Ca 2+' shortname='CO'></dye>
+<dye structure='1555' group='C' id='3016ca' name='Calcium Crimson /Ca 2+' shortname='CC'></dye>
+<dye structure='294' group='R' id='302moh' name='Rhodamine 123/MeOH' shortname='R 123'></dye>
+<dye structure='299' group='D' id='307lip' name='DiD/lipid' shortname='DiD'></dye>
+<dye structure='' group='' id='31583p72' name='Pacific Orange goat anti mouse IgG antibody/pH 7.2' shortname='PO g'></dye>
+<dye structure='1610' group='T' id='3163lip' name='FM® 1-43/lipid' shortname='FM 1.43'></dye>
+<dye structure='1612' group='T' id='3166ch2' name='FM® 4-64/2% CHAPS' shortname='FM 4.64'></dye>
+<dye structure='1613' group='D' id='3167lip' name='Di-8-ANEPPS/lipid' shortname='Di8-ANEPPS'></dye>
+<dye structure='1614' group='T' id='3168p82' name='JC-1/pH 8.2' shortname='JC1'></dye>
+<dye structure='308' group='N' id='316meoh' name='NBD-X/MeOH' shortname='NBD-X'></dye>
+<dye structure='' group='' id='32703rna' name='SYTO RNASelect green fluorescent cell stain/RNA' shortname='SYTO G'></dye>
+<dye structure='' group='' id='32712h2o' name='HCS CellMask Red stain' shortname='stCM R'></dye>
+<dye structure='' group='' id='32713h2o' name='HCS CellMask Orange stain' shortname='stCM O'></dye>
+<dye structure='' group='' id='32714h2o' name='HCS CellMask Green stain' shortname='stCM G'></dye>
+<dye structure='' group='' id='32720h2o' name='HCS CellMask Blue stain' shortname='stCM B'></dye>
+<dye structure='' group='' id='32721h2o' name='HCS CellMask Deep Red stain' shortname='stCM DR'></dye>
+<dye structure='' group='' id='33100dna' name='SYBR® Safe DNA gel stain/DNA' shortname='st.SYBR'></dye>
+<dye structure='' group='' id='34475gto' name='HCS LipidTOX Green neutral lipid stain/triglyceride' shortname='stTOX G'></dye>
+<dye structure='' group='' id='34476gto' name='HCS LipidTOX Red neutral lipid stain/triglyceride' shortname='stTOX R'></dye>
+<dye structure='' group='' id='34477gto' name='HCS LipidTOX Deep Red neutral lipid stain/triglyceride' shortname='stTOX DR'></dye>
+<dye structure='35866' group='C' id='34551p74' name='CMR/pH 7.4' shortname='CMR'></dye>
+<dye structure='36039' group='C' id='34552p72' name='CellTracker Red CMTPX' shortname='CT R CMTPX'></dye>
+<dye structure='5313' group='C' id='34556lip' name='CellTrace BODIPY® TR methyl ester/lipid' shortname='CT.BODIPY TR'></dye>
+<dye structure='' group='' id='34854dna' name='SYTO® 9/DNA' shortname='SYTO 9'></dye>
+<dye structure='' group='' id='34858p72' name='CellTrace calcein violet/pH 7.2' shortname='CT c V'></dye>
+<dye structure='' group='' id='34859dna' name='SYTOX® Red/DNA' shortname='SYTOX R'></dye>
+<dye structure='' group='' id='34955ph8' name='LIVE/DEAD® Fixable Violet Dead Cell Stain' shortname='stLD V'></dye>
+<dye structure='' group='' id='34957p72' name='LIVE/DEAD® Fixable Aqua Dead Cell Stain/pH 7.2' shortname='stLD A'></dye>
+<dye structure='' group='' id='34959p72' name='LIVE/DEAD® Fixable Yellow Dead Cell Stain/pH 7.2' shortname='stLD Y'></dye>
+<dye structure='' group='' id='35003dna' name='Vybrant® DyeCycle Violet stain/DNA' shortname='st.Vybrant DC V'></dye>
+<dye structure='' group='' id='35004dna' name='Vybrant® DyeCycle Green stain/DNA' shortname='st.Vybrant DC G'></dye>
+<dye structure='' group='' id='35005dna' name='Vybrant® DyeCycle Orange stain/DNA' shortname='st.Vybrant DC O'></dye>
+<dye structure='3404' group='P' id='3580dna' name='POPO -1/DNA' shortname='POPO 1'></dye>
+<dye structure='3405' group='P' id='3581dna' name='PO-PRO -1/DNA' shortname='POPRO 1'></dye>
+<dye structure='3406' group='B' id='3582dna' name='BOBO -1/DNA' shortname='BOBO'></dye>
+<dye structure='3408' group='P' id='3584dna' name='POPO -3/DNA' shortname='POPO 3'></dye>
+<dye structure='3409' group='P' id='3585dna' name='PO-PRO -3/DNA' shortname='POPRO 3'></dye>
+<dye structure='3410' group='B' id='3586dna' name='BOBO -3/DNA' shortname='BOBO 3'></dye>
+<dye structure='348' group='S' id='359etoh' name='Sulforhodamine 101/EtOH' shortname='SR 101'></dye>
+<dye structure='3413' group='T' id='3600dna' name='TOTO®-1/DNA' shortname='TOTO 1'></dye>
+<dye structure='3414' group='Y' id='3601dna' name='YOYO®-1/DNA' shortname='YOYO 1'></dye>
+<dye structure='3415' group='T' id='3602dna' name='TO-PRO®-1/DNA' shortname='TO-PRO 1'></dye>
+<dye structure='3416' group='Y' id='3603dna' name='YO-PRO®-1/DNA' shortname='YO-PRO 1'></dye>
+<dye structure='3417' group='T' id='3604dna' name='TOTO®-3/DNA' shortname='TOTO 3'></dye>
+<dye structure='3418' group='T' id='3605dna' name='TO-PRO®-3/DNA' shortname='TO-PRO 3'></dye>
+<dye structure='3419' group='Y' id='3606dna' name='YOYO®-3/DNA' shortname='YOYO 3'></dye>
+<dye structure='3420' group='Y' id='3607dna' name='YO-PRO®-3/DNA' shortname='YO-PRO 3'></dye>
+<dye structure='352' group='R' id='363ph9' name='Resorufin/pH 9.0' shortname='Resorufin'></dye>
+<dye structure='' group='' id='36600p40' name='pHrodo , succinimidyl ester' shortname='succinimidyl'></dye>
+<dye structure='357' group='C' id='368ph9' name='5-(and-6)-carboxy-2`,7`-dichlorofluorescein/pH 9.0' shortname='56C 27 DCF'></dye>
+<dye structure='1739' group='M' id='3733mg' name='Magnesium Green /Mg 2+' shortname='MG'></dye>
+<dye structure='1813' group='D' id='3883lip' name='DiA/lipid' shortname='DiA'></dye>
+<dye structure='403' group='R' id='415ph7' name='Rhodamine phalloidin/pH 7.0' shortname='RP'></dye>
+<dye structure='439' group='L' id='453h2o' name='Lucifer yellow CH/H 2 O' shortname='LY'></dye>
+<dye structure='44' group='A' id='47bsa' name='1,8-ANS/BSA' shortname='18ANS'></dye>
+<dye structure='461' group='C' id='481ph9' name='Calcein/pH 9.0' shortname='Calcein'></dye>
+<dye structure='2016' group='D' id='6116moh' name='BODIPY® TR-X/MeOH' shortname='BODIPY TRX'></dye>
+<dye structure='2017' group='D' id='6117moh' name='BODIPY® TMR-X/MeOH' shortname='BODIPY TMRX'></dye>
+<dye structure='2021' group='C' id='6121meoh' name='5-TAMRA/MeOH' shortname='5-TAMRA.M'></dye>
+<dye structure='2021' group='C' id='6121ph7' name='5-TAMRA/pH 7.0' shortname='5-TAMRA'></dye>
+<dye structure='2024' group='C' id='6124ph7' name='5-ROX/pH 7.0' shortname='5ROX'></dye>
+<dye structure='2042' group='O' id='6146p9' name='Oregon Green® 488 carboxylic acid/pH 9.0' shortname='OG 488 g.9'></dye>
+<dye structure='' group='' id='6150ph7' name='Rhodamine Green /pH 7.0' shortname='RG'></dye>
+<dye structure='2057' group='C' id='6170ph9' name='6-JOE/pH 9.0' shortname='6JOE'></dye>
+<dye structure='2059' group='D' id='6180moh' name='BODIPY® R6G/MeOH' shortname='BODIPY R6G'></dye>
+<dye structure='2043' group='O' id='6380ph8' name='Oregon Green® 488 goat anti mouse IgG antibody/pH 8.0' shortname='OG 488 g.8'></dye>
+<dye structure='' group='' id='6383ph8' name='Oregon Green® 514 goat anti mouse IgG antibody/pH 8.0' shortname='OG 514 g.8'></dye>
+<dye structure='' group='' id='6390p72' name='Texas Red®-X goat anti mouse IgG antibody/pH 7.2' shortname='TR X'></dye>
+<dye structure='' group='' id='6393ph8' name='Rhodamine Red -X goat anti mouse IgG antibody/pH 8.0' shortname='RR'></dye>
+<dye structure='' group='' id='6436ph80' name='Eosin goat anti mouse IgG antibody/pH 8.0' shortname='Eosin '></dye>
+<dye structure='' group='' id='6450p72' name='BODIPY® TMR-X goat anti mouse IgG antibody/pH 7.2' shortname='BODIPY TMRX g'></dye>
+<dye structure='2221' group='R' id='6479ph7' name='Rhodamine 110/pH 7' shortname='R 110'></dye>
+<dye structure='2224' group='H' id='6482p9' name='DDAO/pH 9.0' shortname='DDAO'></dye>
+<dye structure='586' group='C' id='652p10' name='Carboxynaphthofluorescein/pH 10.0' shortname='CNF'></dye>
+<dye structure='2303' group='D' id='6566p3' name='DiFMU/pH 3.0' shortname='DiFMU.3'></dye>
+<dye structure='' group='' id='6566p9' name='DiFMU/pH 9.0' shortname='DiFMU.9'></dye>
+<dye structure='3427' group='E' id='6578ph8' name='ELF® 97 alcohol/pH 8.0' shortname='ELF 97'></dye>
+<dye structure='' group='' id='6650bsa' name='SYPRO® Orange protein gel stain/BSA' shortname='SYPRO O'></dye>
+<dye structure='612' group='M' id='689mecn' name='Malachite green isothiocyanate/MeCN' shortname='MalG'></dye>
+<dye structure='2457' group='S' id='6900na' name='Sodium Green /Na +' shortname='SG'></dye>
+<dye structure='' group='' id='7020dna' name='SYTOX® Green/DNA' shortname='SYTOX G'></dye>
+<dye structure='' group='' id='7026dna' name='CyQUANT® GR/DNA' shortname='CyQUANT G'></dye>
+<dye structure='2654' group='B' id='7464ph70' name='BODIPY® TR-X phallacidin/pH 7.0' shortname='BODIPY TRX'></dye>
+<dye structure='2696' group='M' id='7510moh' name='MitoTracker® Orange/MeOH' shortname='MT O'></dye>
+<dye structure='2698' group='M' id='7512moh' name='MitoTracker® Red/MeOH' shortname='MT R'></dye>
+<dye structure='2700' group='M' id='7514moh' name='MitoTracker® Green FM/MeOH' shortname='MT G FM'></dye>
+<dye structure='3448' group='L' id='7525moh' name='LysoTracker® Blue/MeOH' shortname='LT B'></dye>
+<dye structure='3445' group='L' id='7526p52' name='LysoTracker® Green/pH 5.2' shortname='LT G'></dye>
+<dye structure='3447' group='L' id='7528p52' name='LysoTracker® Red/pH 5.2' shortname='LT R'></dye>
+<dye structure='' group='' id='7532ph5' name='LysoSensor Blue/pH 5.0' shortname='LS B'></dye>
+<dye structure='3449' group='L' id='7534ph5' name='LysoSensor Green/pH 5.0' shortname='LS G'></dye>
+<dye structure='3479' group='L' id='7545ph' name='LysoSensor Yellow/Blue/pH 3.0 and 9.0' shortname='LS YB'></dye>
+<dye structure='' group='' id='7567dna' name='SYBR® Green I nucleic acid gel stain/DNA' shortname='SYBR G'></dye>
+<dye structure='' group='' id='7573dna' name='SYTO® 11/DNA' shortname='SYTO 11'></dye>
+<dye structure='' group='' id='7575dna' name='SYTO® 13/DNA' shortname='SYTO 13'></dye>
+<dye structure='' group='' id='7578dna' name='SYTO® 16/DNA' shortname='SYTO 16'></dye>
+<dye structure='' group='' id='7579dna' name='SYTO® 17/DNA' shortname='SYTO 17'></dye>
+<dye structure='' group='' id='7581dna' name='PicoGreen® dsDNA quantitation reagent' shortname='PicoGreen'></dye>
+<dye structure='2723' group='L' id='7595dna' name='LDS 751/DNA' shortname='LDS 751'></dye>
+<dye structure='' group='' id='801ph75' name='R-phycoerythrin/pH 7.5' shortname='R-Per'></dye>
+<dye structure='' group='' id='803ph75' name='Allophycocyanin/pH 7.5' shortname='APC'></dye>
+<dye structure='' group='' id='8805h2o' name='FluoSpheres® blue fluorescent microspheres/ H 2 O.' shortname='FS B'></dye>
+<dye structure='' group='' id='8806H2O' name='FluoSpheres® crimson fluorescent microspheres/H 2 O.' shortname='FS C'></dye>
+<dye structure='' group='' id='8807h2o' name='FluoSpheres® dark red fluorescent microspheres/H 2 O.' shortname='FS DR'></dye>
+<dye structure='' group='' id='8809h2o' name='FluoSpheres® orange fluorescent microspheres/H 2 O.' shortname='FS O'></dye>
+<dye structure='' group='' id='8810H2O' name='FluoSpheres® red fluorescent microspheres/H 2 O.' shortname='FS R'></dye>
+<dye structure='' group='' id='8811H2O' name='FluoSpheres® yellow-green fluorescent microspheres/H 2 O.' shortname='FSYG'></dye>
+<dye structure='' group='' id='964ph7' name='Cascade Blue® BSA/pH 7.0' shortname='CB BSA'></dye>
+<dye structure='' group='' id='b576nta' name='CellTrace calcein red-orange/pH 7.5' shortname='CT RO'></dye>
+<dye structure='' group='' id='C12RPOPC' name='2-dodecylresorufin/lipid' shortname='2DDR'></dye>
+<dye structure='' group='' id='CFPp74' name='CFP/pH 7.4' shortname='CFP'></dye>
+<dye structure='' group='' id='CMFp72' name='5-chloromethylfluorescein/pH 7.2' shortname='5ClF'></dye>
+<dye structure='' group='' id='ctviose' name='CellTrace Violet stain/pH7.4' shortname='stCT V'></dye>
+<dye structure='' group='' id='cy3igg' name='Cy3 dye labeled IgG antibody/pH 7.2' shortname='Cy3'></dye>
+<dye structure='' group='' id='cy5igg' name='Cy5 dye labeled IgG antibody/pH 7.2' shortname='Cy5'></dye>
+<dye structure='' group='' id='EGFPpH7' name='EGFP/pH 7' shortname='EGFP'></dye>
+<dye structure='' group='' id='mRFP' name='mRFP/pH 7.4' shortname='mRFP'></dye>
+<dye structure='' group='' id='mt36740' name='Amplex® UltraRed peroxidation product/pH 7.5' shortname='Amplex UR'></dye>
+<dye structure='' group='' id='OFP' name='OFP' shortname='OFP'></dye>
+<dye structure='' group='' id='p02458et' name='Nile blue/EtOH' shortname='NB'></dye>
+<dye structure='' group='' id='p02459sa' name='Quinine sulfate/0.5 M H 2 SO 4' shortname='QnS'></dye>
+<dye structure='' group='Q' id='QD525SA' name='Qdot® 525 streptavidin/pH 7.2' shortname='Qdot 525'></dye>
+<dye structure='' group='' id='QD545SA' name='Qdot® 545 streptavidin/pH 7.2' shortname='Qdot 545'></dye>
+<dye structure='' group='' id='QD565SA' name='Qdot® 565 streptavidin/pH 7.2' shortname='Qdot 565'></dye>
+<dye structure='' group='' id='QD585SA' name='Qdot® 585 streptavidin/pH 7.2' shortname='Qdot 585'></dye>
+<dye structure='' group='' id='QD625SA' name='Qdot® 625 streptavidin/pH 7.2' shortname='Qdot 625'></dye>
+<dye structure='' group='' id='QD655SA' name='Qdot® 655 streptavidin/pH 7.2' shortname='Qdot 655'></dye>
+<dye structure='' group='' id='QD800SA' name='Qdot® 800 streptavidin/pH 7.2' shortname='Qdot 800'></dye>
+<dye structure='' group='' id='QNDR' name='[Qnuclear] Deep Red stain' shortname='stDR'></dye>
+<dye structure='' group='' id='TCFLASH' name='FlAsH CCPGCC' shortname='FlAsH'></dye>
+<dye structure='' group='' id='TCREASH' name='ReAsH CCPGCC' shortname='ReAsH'></dye>
+<dye structure='' group='' id='tpzFP' name='YFP/pH 7.4' shortname='YFP'></dye>
+<dye structure='7000390' group='' id='AT_390'  name='ATTO 390' shortname='AT390'></dye>
+<dye structure='7000425' group='' id='AT_425'  name='ATTO 425' shortname='AT425'></dye>
+<dye structure='7000465' group='' id='AT_465'  name='ATTO 465' shortname='AT465'></dye>
+<dye structure='7000488' group='' id='AT_488'  name='ATTO 488' shortname='AT488'></dye>
+<dye structure='7000495' group='' id='AT_495'  name='ATTO 495' shortname='AT495'></dye>
+<dye structure='7000514' group='' id='AT_514'  name='ATTO 514' shortname='AT514'></dye>
+<dye structure='7000520' group='' id='AT_520'  name='ATTO 520' shortname='AT520'></dye>
+<dye structure='7000532' group='' id='AT_532'  name='ATTO 532' shortname='AT532'></dye>
+<dye structure='' group='' id='AT_Rho6G'  name='ATTO Rho6G' shortname='ATRho6G'></dye>
+<dye structure='' group='' id='AT_540Q'  name='ATTO 540Q' shortname='AT540Q'></dye>
+<dye structure='' group='' id='AT_550'  name='ATTO 550' shortname='AT550'></dye>
+<dye structure='7000565' group='' id='AT_565'  name='ATTO 565' shortname='AT565'></dye>
+<dye structure='' group='' id='AT_Rho3B'  name='ATTO Rho3B' shortname='ATRho3B'></dye>
+<dye structure='' group='' id='AT_Rho11'  name='ATTO Rho11' shortname='ATRho11'></dye>
+<dye structure='' group='' id='AT_Rho12'  name='ATTO Rho12' shortname='ATRho12'></dye>
+<dye structure='' group='' id='AT_Thio12'  name='ATTO Thio12' shortname='ATThio12'></dye>
+<dye structure='' group='' id='AT_580Q'  name='ATTO 580Q' shortname='AT580Q'></dye>
+<dye structure='' group='' id='AT_Rho101'  name='ATTO Rho101' shortname='ATRho101'></dye>
+<dye structure='7000590' group='' id='AT_590'  name='ATTO 590' shortname='AT590'></dye>
+<dye structure='' group='' id='AT_Rho13'  name='ATTO Rho13' shortname='ATRho13'></dye>
+<dye structure='' group='' id='AT_594'  name='ATTO 594' shortname='AT594'></dye>
+<dye structure='7000610' group='' id='AT_610'  name='ATTO 610' shortname='AT610'></dye>
+<dye structure='' group='' id='AT_612Q'  name='ATTO 612Q' shortname='AT612Q'></dye>
+<dye structure='' group='' id='AT_620'  name='ATTO 620' shortname='AT620'></dye>
+<dye structure='' group='' id='AT_Rho14'  name='ATTO Rho14' shortname='ATRho14'></dye>
+<dye structure='' group='' id='AT_633'  name='ATTO 633' shortname='AT633'></dye>
+<dye structure='' group='' id='AT_647'  name='ATTO 647' shortname='AT647'></dye>
+<dye structure='' group='' id='AT_647N'  name='ATTO 647N' shortname='AT647N'></dye>
+<dye structure='' group='' id='AT_655'  name='ATTO 655' shortname='AT655'></dye>
+<dye structure='' group='' id='AT_Oxa12'  name='ATTO Oxa12' shortname='ATOxa12'></dye>
+<dye structure='' group='' id='AT_665'  name='ATTO 665' shortname='AT665'></dye>
+<dye structure='' group='' id='AT_680'  name='ATTO 680' shortname='AT680'></dye>
+<dye structure='' group='' id='AT_700'  name='ATTO 700' shortname='AT700'></dye>
+<dye structure='' group='' id='AT_725'  name='ATTO 725' shortname='AT725'></dye>
+<dye structure='' group='' id='AT_740'  name='ATTO 740' shortname='AT740'></dye>
+<dye structure='' group='' id='AT_MB2'  name='ATTO MB2' shortname='ATMB2'></dye>
+<dye structure='' group='BRET' id='b_aequ'  name='Aequorin' shortname='Aqrn'></dye>
+<dye structure='' group='BRET' id='bFfly_pH7'  name='Firefly' shortname='Firfl'></dye>
+<dye structure='' group='' id='b_yfp7'  name='YFP/pH 7.4' shortname='YFP7'></dye>
+<dye structure='' group='BRET' id='b_rluc'  name='Luciferin' shortname='rluc'></dye>
+<dye structure='' group='BRET' id='b_hFPaq+'  name='Aequorin h-FP-aq(+)' shortname='h_FP_aq'></dye>
+<dye structure='' group='' id='b_gfp'  name='GFP/Duschl' shortname='GFP_h'></dye>
