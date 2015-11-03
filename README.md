@@ -6,6 +6,7 @@
 <ul>
 <li><b>Downloading RETCAD:</b> Click on the "Download ZIP" button on the right side of this page.
 <li><b>Running RETCAD:</b> After extracting the contents of the ZIP file, go to the <i>`\bin`</i> folder and double-click on the executable file (e.g., RETCAD.exe)
+<li><b>Screenshots</b> can be viewed in the [wiki](https://github.com/mmottaghi/FRETLab/wiki/Screenshots) pages of this project.
 <li><b>Quick Start:</b> Open one of the samples in the <i>`\Experiments`</i> folder, and simulate it as demonstrated in [this video](https://www.youtube.com/watch?v=Xbjjy8k6O5U).
 <li><b>Users' Guide:</b> Refer to the [wiki](https://github.com/mmottaghi/FRETLab/wiki) pages of this project on GitHub.
 <li><b>Contact:</b>![email](https://github.com/mmottaghi/FRETLab/wiki/pics/contact.gif)
